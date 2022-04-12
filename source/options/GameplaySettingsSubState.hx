@@ -133,8 +133,15 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			10);
 		option.scrollSpeed = 5;
 		option.minValue = 2;
-		option.maxValue = 10;
+		option.maxValue = 20;
 		option.changeValue = 0.1;
+		addOption(option);
+
+		var option:Option = new Option('Lane Underlay',
+			"If unchecked, then no underlane, but it is not recommended.",
+			'laneUnderlay',
+			'bool',
+			true);
 		addOption(option);
 
 		super();
