@@ -3863,6 +3863,14 @@ class PlayState extends MusicBeatState
 		} else if(!note.noAnimation) {
 			var altAnim:String = "";
 
+	    if (ClientPrefs.healthdrain)
+		{
+			if(health > 0.023)
+			{
+			   health -= 0.023;
+			  }
+		    }
+
 			var curSection:Int = Math.floor(curStep / 16);
 			if (SONG.notes[curSection] != null)
 			{

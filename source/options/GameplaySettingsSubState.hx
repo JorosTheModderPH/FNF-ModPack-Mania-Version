@@ -70,6 +70,20 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			false);
 		addOption(option);
 
+		var option:Option = new Option('Lane Underlay',
+			"If unchecked, then no underlane, but it is not recommended.",
+			'laneUnderlay',
+			'bool',
+			true);
+		addOption(option);
+
+		var option:Option = new Option('Drain Health',
+			"Every time an opponent hits, your health will drain.",
+			'healthdrain',
+			'bool',
+			false);
+		addOption(option);
+
 		var option:Option = new Option('Hitsound Volume',
 			'Funny notes does \"Tick!\" when you hit them."',
 			'hitsoundVolume',
@@ -135,13 +149,6 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.minValue = 2;
 		option.maxValue = 20;
 		option.changeValue = 0.1;
-		addOption(option);
-
-		var option:Option = new Option('Lane Underlay',
-			"If unchecked, then no underlane, but it is not recommended.",
-			'laneUnderlay',
-			'bool',
-			true);
 		addOption(option);
 
 		super();
