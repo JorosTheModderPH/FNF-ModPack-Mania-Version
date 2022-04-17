@@ -129,6 +129,12 @@ class PlayState extends MusicBeatState
 	public var unspawnNotes:Array<Note> = [];
 	public var eventNotes:Array<EventNote> = [];
 
+	public var laneunderlaywhiteleftsideOpponent:FlxSprite;
+	public var laneunderlaywhiterightsideOpponent:FlxSprite;
+	public var laneunderlaywhiteleftside:FlxSprite;
+	public var laneunderlaywhiterightside:FlxSprite;
+	public var laneunderlaywhiteleftsidemiddlescroll:FlxSprite;
+	public var laneunderlaywhiterightsidemiddlescroll:FlxSprite;
 	public var laneunderlay:FlxSprite;
 	public var laneunderlayOpponent:FlxSprite;
 
@@ -877,22 +883,59 @@ class PlayState extends MusicBeatState
 		strumLine = new FlxSprite(ClientPrefs.middleScroll ? STRUM_X_MIDDLESCROLL : STRUM_X, 50).makeGraphic(FlxG.width, 10);
 		if(ClientPrefs.downScroll) strumLine.y = FlxG.height - 150;
 
+
+		laneunderlaywhiteleftsideOpponent = new FlxSprite(70, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
+		laneunderlaywhiteleftsideOpponent.alpha = 0.6;
+		laneunderlaywhiteleftsideOpponent.scrollFactor.set();
+		laneunderlaywhiteleftsideOpponent.screenCenter(Y);
+		laneunderlaywhiteleftsideOpponent.visible = false;
+
+		laneunderlaywhiterightsideOpponent = new FlxSprite(570, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
+		laneunderlaywhiterightsideOpponent.alpha = 0.6;
+		laneunderlaywhiterightsideOpponent.scrollFactor.set();
+		laneunderlaywhiterightsideOpponent.screenCenter(Y);
+		laneunderlaywhiterightsideOpponent.visible = false;
+
 		laneunderlayOpponent = new FlxSprite(70, 0).makeGraphic(500, FlxG.height * 2, FlxColor.BLACK); //i borrow this code from doki doki takeover source code
-		laneunderlayOpponent.alpha = 0.9;
+		laneunderlayOpponent.alpha = 0.8;
 		laneunderlayOpponent.scrollFactor.set();
 		laneunderlayOpponent.screenCenter(Y);
-		laneunderlayOpponent.visible = true;
+		laneunderlayOpponent.visible = false;
+
+		laneunderlaywhiteleftside = new FlxSprite(700, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
+		laneunderlaywhiteleftside.alpha = 0.6;
+		laneunderlaywhiteleftside.scrollFactor.set();
+		laneunderlaywhiteleftside.visible = false;
+
+		laneunderlaywhiterightside = new FlxSprite(1200, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
+		laneunderlaywhiterightside.alpha = 0.6;
+		laneunderlaywhiterightside.scrollFactor.set();
+		laneunderlaywhiterightside.visible = false;
+
+		laneunderlaywhiteleftsidemiddlescroll = new FlxSprite(380, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
+		laneunderlaywhiteleftsidemiddlescroll.alpha = 0.6;
+		laneunderlaywhiteleftsidemiddlescroll.scrollFactor.set();
+		laneunderlaywhiteleftside.visible = false;
+
+		laneunderlaywhiterightsidemiddlescroll = new FlxSprite(890, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
+		laneunderlaywhiterightsidemiddlescroll.alpha = 0.6;
+		laneunderlaywhiterightsidemiddlescroll.scrollFactor.set();
+		laneunderlaywhiterightsidemiddlescroll.visible = false;
 
 		laneunderlay = new FlxSprite(70 + (FlxG.width / 2), 0).makeGraphic(500, FlxG.height * 2, FlxColor.BLACK);
-		laneunderlay.alpha = 0.9;
+		laneunderlay.alpha = 0.8;
 		laneunderlay.scrollFactor.set();
 		laneunderlay.screenCenter(Y);
-		laneunderlay.visible = true;
+		laneunderlay.visible = false;
 
 		if (ClientPrefs.laneUnderlay)
 		{
-			add(laneunderlayOpponent);
 			add(laneunderlay);
+			add(laneunderlayOpponent);
+			add(laneunderlaywhiteleftside);
+			add(laneunderlaywhiterightside);
+			add(laneunderlaywhiteleftsideOpponent);
+			add(laneunderlaywhiterightsideOpponent);
 		}
 
 		strumLine.scrollFactor.set();
@@ -1085,6 +1128,12 @@ class PlayState extends MusicBeatState
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
 		laneunderlayOpponent.cameras = [camHUD];
+		laneunderlaywhiteleftsideOpponent.cameras = [camHUD];
+		laneunderlaywhiterightsideOpponent.cameras = [camHUD];
+		laneunderlaywhiteleftside.cameras = [camHUD];
+		laneunderlaywhiterightside.cameras = [camHUD];
+		laneunderlaywhiterightsidemiddlescroll.cameras = [camHUD];
+		laneunderlaywhiteleftsidemiddlescroll.cameras = [camHUD];
 		laneunderlay.cameras = [camHUD];
 
 		// if (SONG.song == 'South')
@@ -1547,11 +1596,17 @@ class PlayState extends MusicBeatState
 			generateStaticArrows(0);
 			generateStaticArrows(1);
 
-			if (FlxG.save.data.middleScroll)
+			if (ClientPrefs.middleScroll)
 		    {
 
+			   laneunderlaywhiteleftsideOpponent.alpha = 0;
+			   laneunderlaywhiterightsideOpponent.alpha = 0;
 			   laneunderlayOpponent.alpha = 0;
 			   laneunderlay.screenCenter(X);
+			   laneunderlaywhiteleftside.alpha = 0;
+			   laneunderlaywhiterightside.alpha = 0;
+			   add(laneunderlaywhiterightsidemiddlescroll);
+			   add(laneunderlaywhiteleftsidemiddlescroll);
 
 		    }
 
@@ -1562,7 +1617,7 @@ class PlayState extends MusicBeatState
 			for (i in 0...opponentStrums.length) {
 				setOnLuas('defaultOpponentStrumX' + i, opponentStrums.members[i].x);
 				setOnLuas('defaultOpponentStrumY' + i, opponentStrums.members[i].y);
-				//if(ClientPrefs.middleScroll) opponentStrums.members[i].visible = false;
+				if(ClientPrefs.middleScroll) opponentStrums.members[i].visible = false;
 			}
 
 			startedCountdown = true;
@@ -2020,10 +2075,16 @@ class PlayState extends MusicBeatState
 	public var skipArrowStartTween:Bool = false; //for lua
 	private function generateStaticArrows(player:Int):Void
 	{
-		if (FlxG.save.data.laneUnderlay)
+		if (ClientPrefs.laneUnderlay)
 		{
 
 			laneunderlayOpponent.visible = true;
+			laneunderlaywhiteleftsideOpponent.visible = true;
+			laneunderlaywhiterightsideOpponent.visible = true;
+			laneunderlaywhiteleftside.visible = true;
+			laneunderlaywhiterightside.visible = true;
+			laneunderlaywhiteleftsidemiddlescroll.visible = true;
+			laneunderlaywhiterightsidemiddlescroll.visible = true;
 			laneunderlay.visible = true;
 
 		}
@@ -2055,7 +2116,7 @@ class PlayState extends MusicBeatState
 			{
 				if(ClientPrefs.middleScroll)
 				{
-					babyArrow.x += 310;
+					babyArrow.x += 9999;
 					if(i > 1) { //Up and Right
 						babyArrow.x += FlxG.width / 2 + 25;
 					}
@@ -3863,7 +3924,7 @@ class PlayState extends MusicBeatState
 		} else if(!note.noAnimation) {
 			var altAnim:String = "";
 
-	    if (ClientPrefs.healthdrain)
+	    if (ClientPrefs.healthDrain)
 		{
 			if(health > 0.023)
 			{
