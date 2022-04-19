@@ -28,6 +28,7 @@ class ClientPrefs {
 	public static var noReset:Bool = false;
 	public static var laneUnderlay:Bool = true;
     public static var healthDrain:Bool = false;
+	public static var darkenScreen:Bool = true;
 	public static var sustainNoteHealth:Bool = true;
 	public static var healthBarAlpha:Float = 1;
 	public static var controllerMode:Bool = false;
@@ -229,6 +230,9 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.healthDrain != null) {
 			healthDrain = FlxG.save.data.healthDrain;
+		}
+		if(FlxG.save.data.darkenScreen != null) {
+			darkenScreen = FlxG.save.data.darkenScreen;
 		}
 		if(FlxG.save.data.controllerMode != null) {
 			controllerMode = FlxG.save.data.controllerMode;

@@ -42,10 +42,17 @@ class MoreGameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
 		var option:Option = new Option('Drain Health',
-			"Every time an opponent hits, your health will start to reduce.",
+			"If checked, Every time an opponent hits, your health will start to reduce.",
 			'healthDrain',
 			'bool',
 			false);
+		addOption(option);
+
+		var option:Option = new Option('Darken Screen',
+			"If checked, Darken your screen outside in the background.",
+			'darkenScreen',
+			'bool',
+			true);
 		addOption(option);
 
 		super();

@@ -137,6 +137,7 @@ class PlayState extends MusicBeatState
 	public var laneunderlaywhiterightsidemiddlescroll:FlxSprite;
 	public var laneunderlay:FlxSprite;
 	public var laneunderlayOpponent:FlxSprite;
+	public var darkenScreen:FlxSprite;
 
 	private var strumLine:FlxSprite;
 
@@ -223,16 +224,19 @@ class PlayState extends MusicBeatState
 	var bottomBoppers:BGSprite;
 	var santa:BGSprite;
 	var heyTimer:Float;
-
+	
 	var bgGirls:BackgroundGirls;
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var bgGhouls:BGSprite;
 
 	public var songScore:Int = 0;
+	public var songScoreDef:Int = 0;
+	public var totalHitScore:Int = 350;
 	public var songHits:Int = 0;
 	public var songMisses:Int = 0;
 	public var scoreTxt:FlxText;
 	var timeTxt:FlxText;
+	var judgementCounter:FlxText;
 	var scoreTxtTween:FlxTween;
 
 	public static var campaignScore:Int = 0;
@@ -915,11 +919,13 @@ class PlayState extends MusicBeatState
 		laneunderlaywhiteleftsidemiddlescroll = new FlxSprite(380, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
 		laneunderlaywhiteleftsidemiddlescroll.alpha = 0.6;
 		laneunderlaywhiteleftsidemiddlescroll.scrollFactor.set();
+		laneunderlaywhiteleftsidemiddlescroll.screenCenter(Y);
 		laneunderlaywhiteleftside.visible = false;
 
 		laneunderlaywhiterightsidemiddlescroll = new FlxSprite(890, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
 		laneunderlaywhiterightsidemiddlescroll.alpha = 0.6;
 		laneunderlaywhiterightsidemiddlescroll.scrollFactor.set();
+		laneunderlaywhiterightsidemiddlescroll.screenCenter(Y);
 		laneunderlaywhiterightsidemiddlescroll.visible = false;
 
 		laneunderlay = new FlxSprite(70 + (FlxG.width / 2), 0).makeGraphic(500, FlxG.height * 2, FlxColor.BLACK);
@@ -927,6 +933,11 @@ class PlayState extends MusicBeatState
 		laneunderlay.scrollFactor.set();
 		laneunderlay.screenCenter(Y);
 		laneunderlay.visible = false;
+
+		darkenScreen = new FlxSprite(0 , 0).makeGraphic(1280, 720, FlxColor.BLACK);
+		darkenScreen.alpha = 0.55;
+		darkenScreen.scrollFactor.set();
+		darkenScreen.visible = true;
 
 		if (ClientPrefs.laneUnderlay)
 		{
@@ -936,6 +947,11 @@ class PlayState extends MusicBeatState
 			add(laneunderlaywhiterightside);
 			add(laneunderlaywhiteleftsideOpponent);
 			add(laneunderlaywhiterightsideOpponent);
+		}
+
+		if (ClientPrefs.darkenScreen)
+		{
+		    add(darkenScreen);
 		}
 
 		strumLine.scrollFactor.set();
@@ -1075,7 +1091,7 @@ class PlayState extends MusicBeatState
 		add(healthBarBG);
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
-		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
+		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + -4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		// healthBar
@@ -1097,12 +1113,24 @@ class PlayState extends MusicBeatState
 		add(iconP2);
 		reloadHealthBarColors();
 
-		scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
-		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		scoreTxt = new FlxText(20, 0, 0, "", 20);
+		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
+		scoreTxt.screenCenter(Y);
+		scoreTxt.y = 220;
 		scoreTxt.borderSize = 1.25;
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
+
+		judgementCounter = new FlxText(20, 0, 0, "", 20);
+	    judgementCounter.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+	    judgementCounter.borderSize = 2;
+	    judgementCounter.borderQuality = 2;
+	    judgementCounter.scrollFactor.set();
+	    judgementCounter.screenCenter(Y);
+		judgementCounter.visible = !ClientPrefs.hideHud;
+        judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${songMisses}';
+        add(judgementCounter);
 
 		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -1127,6 +1155,7 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
+		judgementCounter.cameras = [camHUD];
 		laneunderlayOpponent.cameras = [camHUD];
 		laneunderlaywhiteleftsideOpponent.cameras = [camHUD];
 		laneunderlaywhiterightsideOpponent.cameras = [camHUD];
@@ -1135,6 +1164,7 @@ class PlayState extends MusicBeatState
 		laneunderlaywhiterightsidemiddlescroll.cameras = [camHUD];
 		laneunderlaywhiteleftsidemiddlescroll.cameras = [camHUD];
 		laneunderlay.cameras = [camHUD];
+		darkenScreen.cameras = [camHUD];
 
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
@@ -2410,9 +2440,9 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingName == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ' + ratingName;
+			scoreTxt.text = 'Score: ' + songScore + ' (' + songScoreDef + ') \nHealth: ' + Math.round(health * 50.0) +  '% ' + '\nMisses: ' + songMisses + ' \nRating: ' + ratingName;
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
+			scoreTxt.text = 'Score: ' + songScore + ' (' + songScoreDef + ') \nHealth: ' + Math.round(health * 50.0) +  '% ' + '\nMisses: ' + songMisses + ' \nRating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
 		}
 
 		if(botplayTxt.visible) {
@@ -3483,6 +3513,7 @@ class PlayState extends MusicBeatState
 
 		if(!practiceMode && !cpuControlled) {
 			songScore += score;
+			songScoreDef += (ConvertScore.convertScore(noteDiff));
 			if(!note.ratingDisabled)
 			{
 				songHits++;
@@ -4538,6 +4569,7 @@ class PlayState extends MusicBeatState
 		setOnLuas('rating', ratingPercent);
 		setOnLuas('ratingName', ratingName);
 		setOnLuas('ratingFC', ratingFC);
+		judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${songMisses}';
 	}
 
 	#if ACHIEVEMENTS_ALLOWED
