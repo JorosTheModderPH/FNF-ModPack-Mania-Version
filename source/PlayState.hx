@@ -889,13 +889,13 @@ class PlayState extends MusicBeatState
 
 
 		laneunderlaywhiteleftsideOpponent = new FlxSprite(70, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
-		laneunderlaywhiteleftsideOpponent.alpha = 0.6;
+		laneunderlaywhiteleftsideOpponent.alpha = 0.75;
 		laneunderlaywhiteleftsideOpponent.scrollFactor.set();
 		laneunderlaywhiteleftsideOpponent.screenCenter(Y);
 		laneunderlaywhiteleftsideOpponent.visible = false;
 
 		laneunderlaywhiterightsideOpponent = new FlxSprite(570, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
-		laneunderlaywhiterightsideOpponent.alpha = 0.6;
+		laneunderlaywhiterightsideOpponent.alpha = 0.75;
 		laneunderlaywhiterightsideOpponent.scrollFactor.set();
 		laneunderlaywhiterightsideOpponent.screenCenter(Y);
 		laneunderlaywhiterightsideOpponent.visible = false;
@@ -907,25 +907,27 @@ class PlayState extends MusicBeatState
 		laneunderlayOpponent.visible = false;
 
 		laneunderlaywhiteleftside = new FlxSprite(700, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
-		laneunderlaywhiteleftside.alpha = 0.6;
+		laneunderlaywhiteleftside.alpha = 0.75;
 		laneunderlaywhiteleftside.scrollFactor.set();
 		laneunderlaywhiteleftside.visible = false;
 
 		laneunderlaywhiterightside = new FlxSprite(1200, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
-		laneunderlaywhiterightside.alpha = 0.6;
+		laneunderlaywhiterightside.alpha = 0.75;
 		laneunderlaywhiterightside.scrollFactor.set();
 		laneunderlaywhiterightside.visible = false;
 
 		laneunderlaywhiteleftsidemiddlescroll = new FlxSprite(380, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
 		laneunderlaywhiteleftsidemiddlescroll.alpha = 0.6;
 		laneunderlaywhiteleftsidemiddlescroll.scrollFactor.set();
-		laneunderlaywhiteleftsidemiddlescroll.screenCenter(Y);
+		laneunderlaywhiteleftsidemiddlescroll.screenCenter(X);
+		laneunderlaywhiteleftsidemiddlescroll.x = 380;
 		laneunderlaywhiteleftside.visible = false;
 
 		laneunderlaywhiterightsidemiddlescroll = new FlxSprite(890, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
 		laneunderlaywhiterightsidemiddlescroll.alpha = 0.6;
 		laneunderlaywhiterightsidemiddlescroll.scrollFactor.set();
-		laneunderlaywhiterightsidemiddlescroll.screenCenter(Y);
+		laneunderlaywhiterightsidemiddlescroll.screenCenter(X);
+		laneunderlaywhiterightsidemiddlescroll.x = 890;
 		laneunderlaywhiterightsidemiddlescroll.visible = false;
 
 		laneunderlay = new FlxSprite(70 + (FlxG.width / 2), 0).makeGraphic(500, FlxG.height * 2, FlxColor.BLACK);
