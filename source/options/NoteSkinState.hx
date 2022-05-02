@@ -29,7 +29,6 @@ class NoteSkinState extends MusicBeatState {
 
         bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
         bg.color = 0xFFea71fd;
-		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 		bg.screenCenter();
 
@@ -140,7 +139,6 @@ class NoteSkinState extends MusicBeatState {
 
             arrow.animation.addByPrefix('idle', arrows[i]);
             arrow.animation.play('idle');
-            arrow.antialiasing = ClientPrefs.globalAntialiasing;
             grpNotes.add(arrow);
         }
     }

@@ -231,10 +231,11 @@ class PlayState extends MusicBeatState
 
 	public var songScore:Int = 0;
 	public var songScoreDef:Int = 0;
-	public var totalHitScore:Int = 350;
+	public var songScoreOpponent:Int = 0;
 	public var songHits:Int = 0;
 	public var songMisses:Int = 0;
 	public var scoreTxt:FlxText;
+	public var scoreOpponentTxt:FlxText;
 	var timeTxt:FlxText;
 	var judgementCounter:FlxText;
 	var scoreTxtTween:FlxTween;
@@ -1124,6 +1125,14 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
+		scoreOpponentTxt = new FlxText(20, 0, 0, "", 20);
+		scoreOpponentTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		scoreOpponentTxt.scrollFactor.set();
+		scoreOpponentTxt.screenCenter(Y);
+		scoreOpponentTxt.borderSize = 1.25;
+		scoreOpponentTxt.visible = !ClientPrefs.hideHud;
+		//add(scoreOpponentTxt);
+
 		judgementCounter = new FlxText(20, 0, 0, "", 20);
 	    judgementCounter.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 	    judgementCounter.borderSize = 2;
@@ -1152,6 +1161,7 @@ class PlayState extends MusicBeatState
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
+		scoreOpponentTxt.cameras = [camHUD];
 		botplayTxt.cameras = [camHUD];
 		timeBar.cameras = [camHUD];
 		timeBarBG.cameras = [camHUD];
@@ -2446,6 +2456,8 @@ class PlayState extends MusicBeatState
 		} else {
 			scoreTxt.text = 'Score: ' + songScore + ' (' + songScoreDef + ') \nHealth: ' + Math.round(health * 50.0) +  '% ' + '\nMisses: ' + songMisses + ' \nRating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
 		}
+
+		    //scoreOpponentTxt.text = 'Opponent Score: ' + songScoreOpponent;
 
 		if(botplayTxt.visible) {
 			botplaySine += 180 * elapsed;
@@ -4030,6 +4042,15 @@ class PlayState extends MusicBeatState
 							boyfriend.specialAnim = true;
 						}
 				}
+
+				//*switch(note.noteType) {
+			     	//case 'Acid Note': //Acid note, oh wait, this is not necessary
+						//if(boyfriend.animation.getByName('hurt') != null) {
+							//boyfriend.playAnim('hurt', true);
+							//boyfriend.specialAnim = true;
+							//FlxG.sound.play(Paths.sound('hurtacid'), 0.9);
+						//}
+				//}
 				
 				note.wasGoodHit = true;
 				if (!note.isSustainNote)

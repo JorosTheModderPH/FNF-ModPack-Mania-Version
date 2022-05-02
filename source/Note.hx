@@ -112,6 +112,23 @@ class Note extends FlxSprite
 						missHealth = 0.3;
 					}
 					hitCausesMiss = true;
+				//case 'Acid Note':
+					//ignoreNote = mustPress;
+					//reloadNote('Acid');
+					//noteSplashTexture = 'AcidNoteSplashes';
+					//colorSwap.hue = 0;
+					//colorSwap.saturation = 0;
+					//colorSwap.brightness = 0;
+					//if(isSustainNote) {
+						//missHealth = 0.1;
+					//} else {
+						//missHealth = 0.3;
+					//}
+					hitCausesMiss = true;//
+				case 'No Animation':
+					noAnimation = true;
+				case 'GF Sing':
+					gfNote = true;
 				case 'No Animation':
 					noAnimation = true;
 				case 'GF Sing':
