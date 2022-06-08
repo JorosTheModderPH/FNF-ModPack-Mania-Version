@@ -251,13 +251,13 @@
 						10800,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						11400,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": true
@@ -337,13 +337,13 @@
 						13200,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						13800,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": true
@@ -494,13 +494,13 @@
 						19500,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						20250,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": true
@@ -543,13 +543,13 @@
 						21000,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						21150,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": true
@@ -572,13 +572,13 @@
 						21600,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						22500,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": true
@@ -786,7 +786,7 @@
 						29400,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": true
@@ -866,7 +866,7 @@
 						31800,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": true
@@ -1028,13 +1028,13 @@
 						35100,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						35700,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": false
@@ -1159,7 +1159,7 @@
 						37800,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"mustHitSection": false
@@ -1299,13 +1299,13 @@
 						40200,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						40500,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -1351,25 +1351,25 @@
 						40950,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						41250,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						41550,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						41850,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -1465,7 +1465,7 @@
 						43200,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -1651,7 +1651,7 @@
 						46800,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -1717,13 +1717,13 @@
 						48675,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						48900,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -1784,7 +1784,7 @@
 						50250,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -1860,7 +1860,7 @@
 						50850,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -1911,19 +1911,19 @@
 						51600,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						52200,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						52425,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -1954,7 +1954,7 @@
 						52800,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -2220,13 +2220,13 @@
 						56400,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						56700,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -2387,13 +2387,13 @@
 						58800,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						59475,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -2479,13 +2479,13 @@
 						60000,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						60750,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -2571,13 +2571,13 @@
 						61500,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						62100,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -2658,13 +2658,13 @@
 						62700,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						63300,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -2690,7 +2690,7 @@
 						63600,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -2775,13 +2775,13 @@
 						66300,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						66600,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -2862,7 +2862,7 @@
 						68100,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -3008,7 +3008,7 @@
 						69600,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -3061,7 +3061,7 @@
 						71175,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -3117,13 +3117,13 @@
 						72000,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						72600,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -3184,7 +3184,7 @@
 						73200,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -3788,7 +3788,7 @@
 						86400,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -4034,7 +4034,7 @@
 						92400,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -4336,19 +4336,19 @@
 						105600,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						105900,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						106200,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -4469,19 +4469,19 @@
 						106800,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						107100,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						107400,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -5064,13 +5064,13 @@
 						116400,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						116925,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -5346,7 +5346,7 @@
 						123525,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -5457,7 +5457,7 @@
 						124725,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -5563,7 +5563,7 @@
 						125925,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -5699,7 +5699,7 @@
 						128325,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -5820,7 +5820,7 @@
 						129525,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -5931,7 +5931,7 @@
 						130725,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -6422,7 +6422,7 @@
 						135900,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -6683,13 +6683,13 @@
 						139500,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						139875,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -6845,19 +6845,19 @@
 						140475,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						141375,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						140925,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						141150,
@@ -7317,7 +7317,7 @@
 						154800,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -7423,13 +7423,13 @@
 						156150,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						156375,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -7545,7 +7545,7 @@
 						157500,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -7759,13 +7759,13 @@
 						161025,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						161325,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						161550,
@@ -7836,13 +7836,13 @@
 						162000,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						162300,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -8400,19 +8400,19 @@
 						182400,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						182700,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						183000,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -8548,25 +8548,25 @@
 						186000,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						186300,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						186600,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						186900,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -8732,19 +8732,19 @@
 						190800,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						191250,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						191700,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -8810,13 +8810,13 @@
 						192000,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						192900,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -8862,37 +8862,37 @@
 						193200,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						193500,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						193800,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						193950,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						194100,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						194250,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -8948,13 +8948,13 @@
 						195000,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						195300,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -8990,37 +8990,37 @@
 						195600,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						195900,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						196200,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						196200,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						196500,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						196500,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -9081,13 +9081,13 @@
 						197700,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						197400,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -9123,19 +9123,19 @@
 						198000,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						198600,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						199050,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -9169,19 +9169,19 @@
 						199200,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						199800,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						200100,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -9212,13 +9212,13 @@
 						200400,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						201300,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -9361,25 +9361,25 @@
 						201600,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						201900,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						202200,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						202500,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -9510,13 +9510,13 @@
 						202800,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						203400,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -9662,25 +9662,25 @@
 						204000,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						204300,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						204600,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						204900,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -9816,25 +9816,25 @@
 						205200,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						205500,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						205800,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						206100,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"altAnim": false,
@@ -9953,25 +9953,25 @@
 						206550,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						206925,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						207225,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						207525,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10097,19 +10097,19 @@
 						207975,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						208350,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						208575,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10235,25 +10235,25 @@
 						208800,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						209250,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						209700,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						209850,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10329,25 +10329,25 @@
 						210150,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						210750,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						210825,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						211050,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10423,25 +10423,25 @@
 						211200,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						211500,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						211800,
 						3,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						212100,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10507,25 +10507,25 @@
 						212400,
 						1,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						212700,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						213000,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						213300,
 						0,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10601,25 +10601,25 @@
 						213600,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						213900,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						214200,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						214500,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10690,25 +10690,25 @@
 						214800,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						215100,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						215400,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						215850,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						215700,
@@ -10794,25 +10794,25 @@
 						216000,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						216300,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						216600,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						216900,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10898,25 +10898,25 @@
 						217200,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						217500,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						217800,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						218100,
 						2,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -10987,25 +10987,25 @@
 						218400,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						218700,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						219000,
 						6,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						219300,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						218400,
@@ -11036,19 +11036,19 @@
 						219600,
 						7,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						219600,
 						5,
 						0,
-						"Mami Note"
+						"Holy Note"
 					],
 					[
 						219600,
 						4,
 						0,
-						"Mami Note"
+						"Holy Note"
 					]
 				],
 				"typeOfSection": 0,
@@ -12883,1358 +12883,6 @@
 			}
 		],
 		"gfVersion": "holy-gf",
-		"events": [
-			[
-				0,
-				[
-					[
-						"Flash",
-						"999",
-						"0"
-					]
-				]
-			],
-			[
-				3600,
-				[
-					[
-						"startGo",
-						"",
-						""
-					]
-				]
-			],
-			[
-				4800,
-				[
-					[
-						"Flash",
-						"2.3",
-						"0"
-					]
-				]
-			],
-			[
-				11100,
-				[
-					[
-						"Drain",
-						"-0.0575",
-						""
-					]
-				]
-			],
-			[
-				11700,
-				[
-					[
-						"Drain",
-						"-0.0575",
-						""
-					]
-				]
-			],
-			[
-				12000,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				12300,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				12600,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				12900,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				13200,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				13500,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				13800,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				14100,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				14400,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				14700,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				15000,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				15300,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				15600,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				15900,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				16200,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				16500,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				16800,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				17100,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				17400,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				17700,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				18000,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				18150,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				18300,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				18450,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				18600,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				18750,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				18900,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				19050,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				46800,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				47100,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				47400,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				47700,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				48000,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				48300,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				48600,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				48750,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				48900,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				49050,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				49200,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				49350,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				49500,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				49650,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				49800,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				49950,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				50100,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				50250,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				50400,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				50550,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				50700,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				50850,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51000,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51075,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51150,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51225,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51300,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51375,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51450,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51525,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51600,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51675,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51750,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51825,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51900,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				51975,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				52050,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				52125,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				52275,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				52425,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				52575,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				52725,
-				[
-					[
-						"Drain",
-						"-0.023",
-						""
-					]
-				]
-			],
-			[
-				93600,
-				[
-					[
-						"Flash",
-						"999",
-						"0"
-					]
-				]
-			],
-			[
-				94725,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				94762.5,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				94800,
-				[
-					[
-						"Flash",
-						"3",
-						"0"
-					]
-				]
-			],
-			[
-				94875,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				94950,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				95025,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				95100,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				95175,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				95250,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				95325,
-				[
-					[
-						"Flash",
-						"999",
-						"0"
-					]
-				]
-			],
-			[
-				97125,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				97200,
-				[
-					[
-						"Flash",
-						"3",
-						"0"
-					]
-				]
-			],
-			[
-				97275,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				97350,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				97425,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				97500,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				97575,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				97650,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				97725,
-				[
-					[
-						"Flash",
-						"999",
-						"0"
-					]
-				]
-			],
-			[
-				99525,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				99562.5,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				99600,
-				[
-					[
-						"Flash",
-						"3",
-						"0"
-					]
-				]
-			],
-			[
-				99675,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				99750,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				99825,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				99900,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				99975,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				100050,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				100125,
-				[
-					[
-						"Nothing",
-						"1.5",
-						"3"
-					]
-				]
-			],
-			[
-				100200,
-				[
-					[
-						"Flash",
-						"999",
-						"0"
-					]
-				]
-			],
-			[
-				103200,
-				[
-					[
-						"Flash",
-						"1.5",
-						"0"
-					]
-				]
-			],
-			[
-				121350,
-				[
-					[
-						"startGo",
-						"",
-						""
-					]
-				]
-			],
-			[
-				122400,
-				[
-					[
-						"Change Character",
-						"dad",
-						"holy-mami-mad"
-					]
-				]
-			],
-			[
-				141600,
-				[
-					[
-						"Change Character",
-						"dad",
-						"holy-mami"
-					]
-				]
-			],
-			[
-				142725,
-				[
-					[
-						"Change Character",
-						"dad",
-						"holy-mami"
-					]
-				]
-			],
-			[
-				155700,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				155850,
-				[
-					[
-						"Drain",
-						"-0.0125",
-						""
-					]
-				]
-			],
-			[
-				156000,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156075,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156150,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156225,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156300,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156375,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156450,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156525,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156600,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156675,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156750,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156825,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156900,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				156975,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				157050,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				157125,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				157200,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				157275,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				157350,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				157425,
-				[
-					[
-						"Drain",
-						"-0.025",
-						""
-					]
-				]
-			],
-			[
-				157500,
-				[
-					[
-						"Drain",
-						"-0.05",
-						""
-					]
-				]
-			],
-			[
-				182325,
-				[
-					[
-						"Change Character",
-						"dad",
-						"holy-mami-mad"
-					]
-				]
-			]
-		],
 		"player3": null,
 		"song": "Salvation",
 		"validScore": true,

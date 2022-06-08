@@ -112,19 +112,24 @@ class Note extends FlxSprite
 						missHealth = 0.3;
 					}
 					hitCausesMiss = true;
-				//case 'Acid Note':
-					//ignoreNote = mustPress;
-					//reloadNote('Acid');
-					//noteSplashTexture = 'AcidNoteSplashes';
-					//colorSwap.hue = 0;
-					//colorSwap.saturation = 0;
-					//colorSwap.brightness = 0;
-					//if(isSustainNote) {
-						//missHealth = 0.1;
-					//} else {
-						//missHealth = 0.3;
-					//}
-					hitCausesMiss = true;//
+				case 'Acid Note':
+					ignoreNote = mustPress;
+					reloadNote('ACID');
+					noteSplashTexture = 'AcidNoteSplashes';
+					colorSwap.hue = 0;
+					colorSwap.saturation = 0;
+					colorSwap.brightness = 0;
+					if(isSustainNote) {
+						missHealth = 0.1;
+					} else {
+						missHealth = 0.25;
+					}
+					hitCausesMiss = true;
+				case 'Dodge Note':
+				    reloadNote('SHOOT');
+					noteSplashTexture = 'SHOOTnoteSplashes';
+				    hitHealth = 0.0;
+				    missHealth = 0.75;
 				case 'No Animation':
 					noAnimation = true;
 				case 'GF Sing':
@@ -273,14 +278,10 @@ class Note extends FlxSprite
 		if(texture.length < 1) {
 			skin = PlayState.SONG.arrowSkin;
 			if(skin == null || skin.length < 1) {
-				skin = FlxG.save.data.arrowSkin;
-			}
-			if(FlxG.save.data.arrowSkin == null) {
-				skin = 'noteSkins/ARROW_assets';
+				skin = 'NOTE_assets';
 			}
 		}
 		
-
 		var animName:String = null;
 		if(animation.curAnim != null) {
 			animName = animation.curAnim.name;
@@ -292,11 +293,6 @@ class Note extends FlxSprite
 		var lastScaleY:Float = scale.y;
 		var blahblah:String = arraySkin.join('/');
 		if(PlayState.isPixelStage) {
-			if (FileSystem.exists(Paths.modFolders('images/pixelUI/$blahblah.png')) && FileSystem.exists(Paths.modFolders('images/pixelUI/' + blahblah + 'ENDS.png'))) {
-					blahblah = FlxG.save.data.arrowSkin;
-			} else {
-				blahblah = 'noteSkins/ARROW_assets';
-			}
 			if(isSustainNote) {
 				loadGraphic(Paths.image('pixelUI/' + blahblah + 'ENDS'));
 				width = width / 4;

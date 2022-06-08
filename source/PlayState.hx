@@ -1133,7 +1133,7 @@ class PlayState extends MusicBeatState
 		scoreOpponentTxt.screenCenter(Y);
 		scoreOpponentTxt.borderSize = 1.25;
 		scoreOpponentTxt.visible = !ClientPrefs.hideHud;
-		//add(scoreOpponentTxt);
+		add(scoreOpponentTxt);
 
 		judgementCounter = new FlxText(20, 0, 0, "", 20);
 	    judgementCounter.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -2453,11 +2453,9 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
-		if(ratingName == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' (' + songScoreDef + ') \nHealth: ' + Math.round(health * 50.0) +  '% ' + '\nMisses: ' + songMisses + ' \nRating: ' + ratingName;
-		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' (' + songScoreDef + ') \nHealth: ' + Math.round(health * 50.0) +  '% ' + '\nMisses: ' + songMisses + ' \nRating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
-		}
+		scoreTxt.text = 'Score: ' + songScore + ' ('+songScoreDef+') \nHealth: ' + Math.round(health * 50.0) +  '% ' + ' \nMisses: ' + songMisses + ' \nRating: ' + ratingName;
+		if(ratingName != '?')
+			scoreTxt.text += '\n('+ Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + '\n' + ratingFC;
 
 		    //scoreOpponentTxt.text = 'Opponent Score: ' + songScoreOpponent;
 
@@ -4055,15 +4053,25 @@ class PlayState extends MusicBeatState
 						}
 				}
 
-				//*switch(note.noteType) {
-			     	//case 'Acid Note': //Acid note, oh wait, this is not necessary
-						//if(boyfriend.animation.getByName('hurt') != null) {
-							//boyfriend.playAnim('hurt', true);
-							//boyfriend.specialAnim = true;
-							//FlxG.sound.play(Paths.sound('hurtacid'), 0.9);
-						//}
-				//}
+				switch(note.noteType) {
+			     	case 'Acid Note': //Acid note, oh wait, this is not necessary
+						if(boyfriend.animation.getByName('hurt') != null) {
+							boyfriend.playAnim('hurt', true);
+							boyfriend.specialAnim = true;
+							FlxG.sound.play(Paths.sound('hurtacid'));
+						}
+				}
+
+				switch(note.noteType) {
+			     	case 'Dodge Note': //Dodge note
+						if(boyfriend.animation.getByName('hurt') != null) {
+							boyfriend.playAnim('hurt', true);
+							boyfriend.specialAnim = true;
+							FlxG.sound.play(Paths.sound('shoot'));
+						}
+				}
 				
+
 				note.wasGoodHit = true;
 				if (!note.isSustainNote)
 				{

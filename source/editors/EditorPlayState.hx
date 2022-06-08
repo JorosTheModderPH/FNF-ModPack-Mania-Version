@@ -710,14 +710,15 @@ class EditorPlayState extends MusicBeatState
 							spawnNoteSplashOnNote(note);
 						}
 					}
-				//*case 'Acid Note': 
-					//noteMiss(note.noteData);
-					//--songMisses;
-					//if(!note.isSustainNote) {
-						//if(!note.noteSplashDisabled) {
-							//spawnNoteSplashOnNote(note);
-						//}
-					//}
+
+				case 'Acid Note': 
+					noteMiss(note.noteData);
+					--songMisses;
+					if(!note.isSustainNote) {
+						if(!note.noteSplashDisabled) {
+							spawnNoteSplashOnNote(note);
+						}
+					}
 
 					note.wasGoodHit = true;
 					vocals.volume = 0;
