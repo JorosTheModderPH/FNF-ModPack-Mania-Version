@@ -5,7 +5,7 @@ function onCreate()
 			setPropertyFromGroup('unspawnNotes', i, 'texture', 'notes/types/SHOOTNOTE_assets'); --Change texture
 			setPropertyFromGroup('unspawnNotes', i, 'noteSplashTexture', 'notes/types/SHOOTnoteSplashes'); --Change note splash texture
 			setPropertyFromGroup('unspawnNotes', i, 'hitHealth', '0'); --Default value is: 0.023, health gained on hit
-			setPropertyFromGroup('unspawnNotes', i, 'missHealth', '0.7'); --Default value is: 0.0475, health lost on miss
+			setPropertyFromGroup('unspawnNotes', i, 'missHealth', '0.8'); --Default value is: 0.0475, health lost on miss
 			setPropertyFromGroup('unspawnNotes', i, 'ignoreNote', false); --Miss has penalties
                end
 	end

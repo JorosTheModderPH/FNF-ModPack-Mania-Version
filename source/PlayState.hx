@@ -1292,6 +1292,7 @@ class PlayState extends MusicBeatState
 		CoolUtil.precacheSound('missnote1');
 		CoolUtil.precacheSound('missnote2');
 		CoolUtil.precacheSound('missnote3');
+		CoolUtil.precacheSound('shoot-normal');
 
 		if (PauseSubState.songName != null) {
 			CoolUtil.precacheMusic(PauseSubState.songName);
@@ -3979,13 +3980,13 @@ class PlayState extends MusicBeatState
 		} else if(!note.noAnimation) {
 			var altAnim:String = "";
 
-	    if (ClientPrefs.healthDrain)
-		{
-			if(health > 0.023)
+	        if (ClientPrefs.healthDrain)
+		    {
+			    if(health > 0.023)
 			{
-			   health -= 0.023;
-			  }
+			    health -= 0.023;
 		    }
+	        }
 
 			var curSection:Int = Math.floor(curStep / 16);
 			if (SONG.notes[curSection] != null)
@@ -4062,14 +4063,15 @@ class PlayState extends MusicBeatState
 						}
 				}
 
-				switch(note.noteType) {
-			     	case 'Dodge Note': //Dodge note
-						if(boyfriend.animation.getByName('hurt') != null) {
-							boyfriend.playAnim('hurt', true);
-							boyfriend.specialAnim = true;
-							FlxG.sound.play(Paths.sound('shoot'));
-						}
-				}
+				//switch(note.noteType) {
+			     	//case 'Dodge Note': //Dodge note
+						//if(boyfriend.animation.getByName('hurt') != null) {
+							//boyfriend.playAnim('hurt', true);
+							//boyfriend.specialAnim = true;
+							//FlxG.sound.play(Paths.sound('shoot-normal', 'shared')); //im trying to have it an sounds effect, but it didnt work anyways, so we are going to use the custom notetype with lua, since it completely works with lua without any problem
+							//CoolUtil.precacheSound('shoot-normal');
+						//}
+				//}
 				
 
 				note.wasGoodHit = true;
