@@ -182,6 +182,7 @@ class PlayState extends MusicBeatState
 	public var healthGain:Float = 1;
 	public var healthLoss:Float = 1;
 	public var instakillOnMiss:Bool = false;
+	public var mirrorMode:Bool = false;
 	public var cpuControlled:Bool = false;
 	public var practiceMode:Bool = false;
 
@@ -315,6 +316,7 @@ class PlayState extends MusicBeatState
 		healthGain = ClientPrefs.getGameplaySetting('healthgain', 1);
 		healthLoss = ClientPrefs.getGameplaySetting('healthloss', 1);
 		instakillOnMiss = ClientPrefs.getGameplaySetting('instakill', false);
+		mirrorMode = ClientPrefs.getGameplaySetting('mirror', false);
 		practiceMode = ClientPrefs.getGameplaySetting('practice', false);
 		cpuControlled = ClientPrefs.getGameplaySetting('botplay', false);
 
@@ -2653,8 +2655,17 @@ class PlayState extends MusicBeatState
 				}
 
 				var angleDir = strumDirection * Math.PI / 180;
-				if (daNote.copyAngle)
-					daNote.angle = strumDirection - 90 + strumAngle;
+				if (daNote.copyAngle){
+					daNote.angle = strumAngle;
+					daNote.angle += strumDirection - 90;
+					if(Math.abs(strumDirection) % 90 == 0 ) daNote.angle -= strumDirection - 90;
+				}
+				if(daNote.isSustainNote){
+					daNote.angle = strumDirection + 90;
+					if(daNote.angle == 180 && strumScroll == true){
+						daNote.angle = 0;
+					}
+				}
 
 				if(daNote.copyAlpha)
 					daNote.alpha = strumAlpha;
@@ -2768,6 +2779,7 @@ class PlayState extends MusicBeatState
 		persistentUpdate = false;
 		paused = true;
 		cancelMusicFadeTween();
+		mirrorMode = !mirrorMode;
 		MusicBeatState.switchState(new ChartingState());
 		chartingMode = true;
 
