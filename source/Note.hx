@@ -125,11 +125,15 @@ class Note extends FlxSprite
 						missHealth = 0.2;
 					}
 					hitCausesMiss = true;
-				//case 'Dodge Note':
-				   //reloadNote('SHOOT');
-					//noteSplashTexture = 'SHOOTnoteSplashes';
-				   //hitHealth = 0.0;
-				   //missHealth = 0.8;
+				case 'Holy Note':
+					reloadNote('HOLY');
+					hitHealth = 0.0;
+					noteSplashDisabled = true;
+				case 'Dodge Note':
+				   reloadNote('SHOOT');
+					noteSplashTexture = 'SHOOTnoteSplashes';
+				   hitHealth = 0.0;
+				   missHealth = 0.8;
 				case 'No Animation':
 					noAnimation = true;
 				case 'GF Sing':

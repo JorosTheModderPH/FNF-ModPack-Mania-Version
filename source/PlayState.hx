@@ -159,6 +159,8 @@ class PlayState extends MusicBeatState
 	public var health:Float = 1;
 	public var combo:Int = 0;
 
+	private var holyMisses:Float = 0.40;
+
 	private var healthBarBG:AttachedSprite;
 	public var healthBar:FlxBar;
 	var songPercent:Float = 0;
@@ -2455,6 +2457,8 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		scoreTxt.text = 'Score: ' + songScore + ' ('+songScoreDef+') \nHealth: ' + Math.round(health * 50.0) +  '% ' + ' \nMisses: ' + songMisses + ' \nRating: ' + ratingName;
+		if (curSong == 'Salvation')
+		           scoreTxt.text = 'Score: ' + songScore + ' ('+songScoreDef+') \nHealth: ' + Math.round(health * 50.0) +  '% ' + ' \nHoly Power: ' + (holyMisses * 50) +  '% ' + ' \nMisses: ' + songMisses + ' \nRating: ' + ratingName;
 		if(ratingName != '?')
 			scoreTxt.text += '\n('+ Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + '\n' + ratingFC;
 
@@ -3888,6 +3892,15 @@ class PlayState extends MusicBeatState
 				note.destroy();
 			}
 		});
+
+		if(daNote.noteType == 'Holy Note') 
+		{ 
+			FlxG.sound.play(Paths.sound('MAMI_shoot'));
+			health -= holyMisses * healthLoss;
+			holyMisses += 0.4 * healthLoss;
+			FlxG.camera.shake(0.02, 0.2);
+		}
+
 		combo = 0;
 
 		health -= daNote.missHealth * healthLoss;
@@ -4038,6 +4051,19 @@ class PlayState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('hitsound'), ClientPrefs.hitsoundVolume);
 			}
 
+			if(note.noteType == 'Holy Note') {
+				FlxG.sound.play(Paths.sound('MAMI_shoot'));
+			    FlxG.camera.shake(0.02, 0.2);
+            
+            }
+
+			if(note.noteType == 'Dodge Note') {
+				FlxG.sound.play(Paths.sound('shoot-normal'));//i found the solution lol  
+				FlxG.camera.zoom += 0.005;
+				camHUD.zoom += 0.005;
+				FlxG.camera.shake(0.01, 0.03);   
+            }
+
 			if(cpuControlled && (note.ignoreNote || note.hitCausesMiss)) return;
 
 			if(note.hitCausesMiss) {
@@ -4063,15 +4089,21 @@ class PlayState extends MusicBeatState
 						}
 				}
 
-				//switch(note.noteType) {
-			     	//case 'Dodge Note': //Dodge note
-						//if(boyfriend.animation.getByName('hurt') != null) {
-							//boyfriend.playAnim('hurt', true);
-							//boyfriend.specialAnim = true;
-							//FlxG.sound.play(Paths.sound('shoot-normal', 'shared')); //im trying to have it an sounds effect, but it didnt work anyways, so we are going to use the custom notetype with lua, since it completely works with lua without any problem
-							//CoolUtil.precacheSound('shoot-normal');
-						//}
-				//}
+				switch(note.noteType) {
+			     	case 'Dodge Note': //Dodge note
+						if(boyfriend.animation.getByName('hurt') != null) {
+							boyfriend.playAnim('hurt', true);
+							boyfriend.specialAnim = true;
+						}
+				}
+
+				switch(note.noteType) {
+			     	case 'Holy Note':
+						if(boyfriend.animation.getByName('hurt') != null) {
+							boyfriend.playAnim('hurt', true);
+							boyfriend.specialAnim = true;
+						}
+				}
 				
 
 				note.wasGoodHit = true;
