@@ -926,6 +926,7 @@ class PlayState extends MusicBeatState
 		laneunderlaywhiteleftsidemiddlescroll.scrollFactor.set();
 		laneunderlaywhiteleftsidemiddlescroll.screenCenter(X);
 		laneunderlaywhiteleftsidemiddlescroll.x = 380;
+		laneunderlaywhiteleftsidemiddlescroll.cameras = [camHUD];
 		laneunderlaywhiteleftside.visible = false;
 
 		laneunderlaywhiterightsidemiddlescroll = new FlxSprite(890, 0).makeGraphic(10, FlxG.height * 2, FlxColor.WHITE);
@@ -1178,7 +1179,6 @@ class PlayState extends MusicBeatState
 		laneunderlaywhiteleftside.cameras = [camHUD];
 		laneunderlaywhiterightside.cameras = [camHUD];
 		laneunderlaywhiterightsidemiddlescroll.cameras = [camHUD];
-		laneunderlaywhiteleftsidemiddlescroll.cameras = [camHUD];
 		laneunderlay.cameras = [camHUD];
 		darkenScreen.cameras = [camHUD];
 
@@ -3896,10 +3896,17 @@ class PlayState extends MusicBeatState
 		if(daNote.noteType == 'Holy Note') 
 		{ 
 			FlxG.sound.play(Paths.sound('MAMI_shoot'));
-			health -= holyMisses * healthLoss;
-			holyMisses += 0.4 * healthLoss;
+			health -= holyMisses;
+			holyMisses += 0.40 * healthLoss;
 			FlxG.camera.shake(0.02, 0.2);
 		}
+
+		if(note.noteType == 'Dodge Note') {
+				FlxG.sound.play(Paths.sound('shoot-normal'));//i found the solution lol  
+				FlxG.camera.zoom += 0.015;
+				camHUD.zoom += 0.015;
+				FlxG.camera.shake(0.015, 0.03);   
+       }
 
 		combo = 0;
 

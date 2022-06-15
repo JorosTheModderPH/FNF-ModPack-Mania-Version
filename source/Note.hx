@@ -128,6 +128,7 @@ class Note extends FlxSprite
 				case 'Holy Note':
 					reloadNote('HOLY');
 					hitHealth = 0.0;
+					missHealth = 0.0;
 					noteSplashDisabled = true;
 				case 'Dodge Note':
 				   reloadNote('SHOOT');
