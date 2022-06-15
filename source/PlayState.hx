@@ -3901,7 +3901,7 @@ class PlayState extends MusicBeatState
 			FlxG.camera.shake(0.02, 0.2);
 		}
 
-		if(note.noteType == 'Dodge Note') {
+		if(daNote.noteType == 'Dodge Note') {
 				FlxG.sound.play(Paths.sound('shoot'));//i found the solution lol  
 				FlxG.camera.zoom += 0.015;
 				camHUD.zoom += 0.015;
