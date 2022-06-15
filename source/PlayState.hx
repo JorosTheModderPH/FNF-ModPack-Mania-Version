@@ -3902,7 +3902,7 @@ class PlayState extends MusicBeatState
 		}
 
 		if(note.noteType == 'Dodge Note') {
-				FlxG.sound.play(Paths.sound('shoot-normal'));//i found the solution lol  
+				FlxG.sound.play(Paths.sound('shoot'));//i found the solution lol  
 				FlxG.camera.zoom += 0.015;
 				camHUD.zoom += 0.015;
 				FlxG.camera.shake(0.015, 0.03);   
